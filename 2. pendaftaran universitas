@@ -6,44 +6,75 @@
     <title>Pendaftaran Mahasiswa Baru</title>
 </head>
 <body>
-    <h1>Pendaftaran Mahasiswa Baru Universitas Cendekia Abditama</h1>
-    <form action="#" method="post">
-        <label>Nama Lengkap:</label>
-        <input type="text" name="nama_lengkap" value="oracle kanzul ilmi"><br><br>
 
-        <label>Nama Panggilan:</label>
-        <input type="text" name="nama_panggilan" value="Oracle"><br><br>
+    <table align="center" border="0" width="50%">
+        <tr>
+            <td colspan="3" align="center">
+                <h2>Pendaftaran Mahasiswa Baru</h2>
+                <h3>Universitas Cendekia Abditama</h3>
+                <hr>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <form action="#" method="post">
+                    <table width="100%" border="0">
+                        <tr>
+                            <td width="40%">Nama Lengkap</td>
+                            <td width="5%">:</td>
+                            <td><input type="text" name="nama_lengkap"></td>
+                        </tr>
+                        <tr>
+                            <td>Nama Panggilan</td>
+                            <td>:</td>
+                            <td><input type="text" name="nama_panggilan"></td>
+                        </tr>
+                        <tr>
+                            <td>Tempat Lahir</td>
+                            <td>:</td>
+                            <td><input type="text" name="tempat_lahir"></td>
+                        </tr>
+                        <tr>
+                            <td>Tanggal Lahir</td>
+                            <td>:</td>
+                            <td>
+                                <input type="date" id="tanggal-lahir" name="tanggal-lahir">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Alamat Rumah</td>
+                            <td>:</td>
+                            <td><input type="text" name="alamat" value="Tangerang"></td>
+                        </tr>
+                        <tr>
+                            <td>Jenis Kelamin</td>
+                            <td>:</td>
+                            <td>
+                                <input type="radio" name="jenis_kelamin" value="laki-laki" checked> Laki-laki
+                                <input type="radio" name="jenis_kelamin" value="perempuan"> Perempuan
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Asal Sekolah</td>
+                            <td>:</td>
+                            <td><input type="text" name="asal_sekolah" value="SMK Islamic Village"></td>
+                        </tr>
+                        <tr>
+                            <td>Nilai UAN</td>
+                            <td>:</td>
+                            <td><input type="text" name="nilai_uan" value="4.00"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" align="center">
+                                <br>
+                                <button type="submit">Simpan</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </td>
+        </tr>
+    </table>
 
-        <label>Tempat Lahir:</label>
-        <input type="text" name="tempat_lahir" value="Tangerang"><br><br>
-
-        <label>Tanggal Lahir:</label>
-        <select name="tanggal">
-            <option selected>24</option>
-        </select>
-        <select name="bulan">
-            <option selected>Juni</option>
-        </select>
-        <select name="tahun">
-            <option selected>2002</option>
-        </select>
-        <br><br>
-
-        <label>Alamat Rumah:</label>
-        <input type="text" name="alamat" value="Tangerang"><br><br>
-
-        <label>Jenis Kelamin:</label>
-        <input type="radio" name="jenis_kelamin" value="laki-laki" checked> laki-laki
-        <input type="radio" name="jenis_kelamin" value="perempuan"> perempuan
-        <br><br>
-
-        <label>Asal Sekolah:</label>
-        <input type="text" name="asal_sekolah" value="SMK Islamic Village"><br><br>
-
-        <label>Nilai UAN:</label>
-        <input type="text" name="nilai_uan" value="4.00"><br><br>
-
-        <button type="submit">Simpan</button>
-    </form>
 </body>
 </html>
